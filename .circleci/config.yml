@@ -24,8 +24,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: "Declare Abram entering"
-        command: "echo ibram reda enter the Circleci now yahoooooow"
+          name: "Declare Abram entering"
+          command: "echo ibram reda enter the Circleci now yahoooooow"
 
 
 
@@ -36,4 +36,4 @@ workflows:
     jobs:
       - say-hello
       - Declare-Abram-entering:
-        requires: [say-hello]
+         requires: [say-hello]
